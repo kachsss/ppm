@@ -9,10 +9,10 @@ default: &default
 development:
   adapter: postgresql
   encoding: unicode
-  database: ppm_development
+  database: postgres
   pool: 5
   username: postgres
-  password: nimda
+  password: ppm
   host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
@@ -38,11 +38,11 @@ test:
   database: ppm_test
   pool: 5
   username: postgres
-  password: nimda
+  password: ppm
   port: 5432
   
 production:
   <<: *default
   database: ppm_production
   username: postgres
-  password: nimda
+  password: ppm

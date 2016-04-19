@@ -2,14 +2,17 @@
 <% provide(:rew, 'Дом111') %>
 
 
-<nav class="navbar  navbar-default navbar-fixed-top  ">
+<nav class="navbar  navbar-default navbar-static-top  ">
   <div class="container-fluid">
-    <div class="navbar-header">
-      
-	  <%= link_to "Комплексные светопрозрачные решения", root_path, class: "navbar-brand logo" %>
-	  <p class="navbar-text">Алюминиевые светопрозрачные конструкции</p>
+    <div class="row">
+      	<div class="col-lg-7 col-lg-offset-1">
+		  	<%= link_to "Комплексные светопрозрачные решения", root_path, class: "navbar-brand logo" %>
+		</div>	
+		<div class="col-lg-4">
+	  		<p class="navbar-text">Алюминиевые светопрозрачные конструкции</p>
+			</div>
       <!--<%= image_tag("zamer_mini.jpg", class: "navbar_img", alt: "Комплексные светопрозрачные решения") %>-->
-      </a>
+      
     </div>
   </div>
 </nav>
@@ -58,15 +61,11 @@
   </div>
 <!-- Конец Слайдер 1 -->
  
-
-  <div class="row featurette">
+<div class="container-fluid">
+  <div class="row ">
     <div class="col-md-2 col-md-offset-1">
       <!--Sidebar content-->
-	  
-	  
-
-        
-            <div id="navbar" class="navbar-collapse collapse">
+	       <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav nav-pills nav-stacked">
                 <li class="active"><%= link_to "Домой",    root_path %></li>
                 <li><%= link_to "Алюминий",   alum_path %></li>
@@ -91,21 +90,18 @@
          
 	<!--End of Sidebar content-->  
     </div>
-    <div class="col-md-6">
+    <div class="col-md-9">
       <!--Body content-->
 	  
-	  <div class="container marketing">	  
+	   
 	  <!-- START THE FEATURETTES -->
-
-      
-
-      <div class="row featurette">
+      <div class="row">
         <div class="col-md-7">
           <h2 class="featurette-heading red center">Специальное предложение!<br><br>
 			<span class="text-muted">Только для покупателей квартир в новых домах!!!</span><br><br></h2>
           <p class="lead center">При замене всех окон в квартире скидка на весь заказ <span class="red">20%</span></p>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-4">
 			<%= image_tag("sale_001.jpg", class: "featurette-image img-responsive center-block", alt:"500x500", size:"500") %>
         </div>
       </div>
@@ -116,20 +112,20 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-sm-7">
+        <div class="col-sm-8">
           <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-4">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1MTQ3YzhjMGNjIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTUxNDdjOGMwY2MiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
         </div>
-      </div>
+      
 
       <hr class="featurette-divider">
 
 	
 	
-		<h1>Ajax show</h1>
+		<br /><h1>Ajax show</h1>
 		<p>The current time is <%= @time %></p>
 		Click this link to show the current 
 		
