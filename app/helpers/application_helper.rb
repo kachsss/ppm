@@ -1,7 +1,7 @@
 module ApplicationHelper
   def full_title(page_title)
 
-    base_title = "Быстрые окна"
+    base_title = "Комплексные светопрозрачные решения"
     
   if page_title.empty?
       base_title

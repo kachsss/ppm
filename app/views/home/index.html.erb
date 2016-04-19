@@ -2,24 +2,77 @@
 <% provide(:rew, 'Дом111') %>
 
 
- <div class="navbar-wrapper">
-    <div class="container">
+<nav class="navbar  navbar-default navbar-fixed-top  ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+	  <%= link_to "Комплексные светопрозрачные решения", root_path, class: "navbar-brand logo" %>
+	  <p class="navbar-text">Алюминиевые светопрозрачные конструкции</p>
+      <!--<%= image_tag("zamer_mini.jpg", class: "navbar_img", alt: "Комплексные светопрозрачные решения") %>-->
+      </a>
+    </div>
+  </div>
+</nav>
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <%= link_to "Фабрика оконных конструкций DEMO", root_path, class: "navbar-brand logo" %>
-            </div>
+ 
+	
+<!-- Слайдер 1 -->	
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Маркеры слайдов -->
+    <ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+ 
+	<!-- Содержимое слайдов -->
+	<div class="carousel-inner" role="listbox">
+		
+		<div class="item active", style="height:200px">
+			<%= image_tag("slider/slider001.jpg", class: "slider_img", alt: "Вызов замерщика") %>
+			
+		</div>
+                     
+		<div class="item", style="height:200px">
+			<%= image_tag("slider/slider002.jpg", class: "slider_img", alt: "Вызов замерщика") %>
+			
+			
+		</div>
+                     
+		<div class="item", style="height:200px">
+			<%= image_tag("slider/slider003.jpg", class: "slider_img", alt: "Вызов замерщика") %>
+			
+			
+		</div>
+	</div>
+ 
+	<!-- Controls -->
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
+<!-- Конец Слайдер 1 -->
+ 
+
+  <div class="row featurette">
+    <div class="col-md-2 col-md-offset-1">
+      <!--Sidebar content-->
+	  
+	  
+
+        
             <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
+              <ul class="nav nav-pills nav-stacked">
                 <li class="active"><%= link_to "Домой",    root_path %></li>
-                <li><%= link_to "Наши услуги",   help_path %></li>
+                <li><%= link_to "Алюминий",   alum_path %></li>
+				<li><%= link_to "ПВХ",   alum_path %></li>
+				<li><%= link_to "Стеклянные конструкции",   alum_path %></li>
+				<li><%= link_to "Автоматика",   alum_path %></li>
                 <li><%= link_to "Вход в личный кабинет", '#' %></li>
                 <li class="dropdown">
                   <a href="./Carousel Template for Bootstrap_files/Carousel Template for Bootstrap.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -35,72 +88,16 @@
                 </li>
               </ul>
             </div>
-          </div>
-        </nav>
-
+         
+	<!--End of Sidebar content-->  
     </div>
-</div>
-	
-	
- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	<!-- Маркеры слайдов -->
-    <ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
- 
-	<!-- Содержимое слайдов -->
-	<div class="carousel-inner" role="listbox">
-		
-		<div class="item active", style="height:500px">
-			<%= image_tag("slider/slider001.jpg", class: "slider_img", alt: "Вызов замерщика") %>
-			<div class="carousel-caption">
-				<h3>Подумай об окнах сейчас,  после того, как Вы сделаете ремонт,<br> 
-				сменить окна будет гораздо менее удобно и комфортно для Вас.</h3>
-				
-			</div>
-		</div>
-                     
-		<div class="item", style="height:500px">
-			<%= image_tag("slider/slider002.jpg", class: "slider_img", alt: "Вызов замерщика") %>
-			
-			<div class="carousel-caption">
-				<h3>Свист ветра за окном, долгое ожидание замены окон, <br>
-				пыль на подоконниках, заклинившая форточка - это не для Вас,<br>
-				поменяй окна, замени фурнитуру и живи комфортно.</h3>
-				
-			</div>
-		</div>
-                     
-		<div class="item", style="height:500px">
-			<%= image_tag("slider/slider003.jpg", class: "slider_img", alt: "Вызов замерщика") %>
-			
-			<div class="carousel-caption">
-				<h3>Цены на электроэнергию не снижаются, отопление включают поздно,  <br>
-				а выключают рано., хватит обогревать улицу,  <br>
-				поставь энергосберегающие окна, экономьте на тепле.</h3>
-				
-			</div>
-		</div>
-	</div>
- 
-	<!-- Controls -->
-	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-  </div>
- </div>
-      
- <div class="container marketing">	  
+    <div class="col-md-6">
+      <!--Body content-->
+	  
+	  <div class="container marketing">	  
 	  <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+      
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -115,15 +112,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <%= image_tag("okna_001.jpg", class: "featurette-image img-responsive center-block", alt:"500x500", size:"500") %>        </div>
-      </div>
-
+      
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -143,13 +132,21 @@
 		<h1>Ajax show</h1>
 		<p>The current time is <%= @time %></p>
 		Click this link to show the current 
-		<%= link_to "help",	action: "help" %>.<br/>
+		
 
 		<div id='time_div' data-background-color="#000099">
 		123456543</div>
 	  <br>
 	  
- </div>
+ 	</div>
+	
+	<!--End of Body content-->
+    </div>
+  </div>
+
+ 
+      
+ 
 
 
 
